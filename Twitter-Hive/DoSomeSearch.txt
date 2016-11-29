@@ -1,0 +1,3 @@
+add jar /app/Software/Hive-JSON-Serde/json-serde/target/json-serde-1.3.8-SNAPSHOT-jar-with-dependencies.jar; 
+
+SELECT tweets.place.country,count(tweets.place.country) FROM tweets where tweets.place is not null group by tweets.place.country LIMIT 100;

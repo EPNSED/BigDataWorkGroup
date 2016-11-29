@@ -1,0 +1,3 @@
+add jar /app/Software/Hive-JSON-Serde/json-serde/target/json-serde-1.3.8-SNAPSHOT-jar-with-dependencies.jar;  
+
+LOAD DATA INPATH '/user/appadmin/flume/Twitter/FlumeData.*'  INTO TABLE  tweets PARTITION(datehour=0);
